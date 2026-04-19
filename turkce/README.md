@@ -1,6 +1,6 @@
-# Trendyol HTTP Istek Analizi Projesi (Turkce Ozet)
+# Trendyol HTTP Istek Analizi Projesi (Türkçe Ozet)
 
-Bu klasor, ana projedeki Ingilizce dokumantasyonun Turkce ozetini icerir.
+Bu klasor, ana projedeki Ingilizce dokumantasyonun Türkçe ozetini icerir.
 
 ## Proje Amaci
 
@@ -29,5 +29,5 @@ Bu calismada istemci-sunucu mimarisi baglaminda su basliklar incelendi:
 
 ## Dosyalar
 
-- Bu klasorde Turkce ozet bulunur.
+- Bu klasorde Türkçe ozet bulunur.
 - Teknik detaylar icin ust dizindeki README.md ve docs/ klasorune bakabilirsiniz.

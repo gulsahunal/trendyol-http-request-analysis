@@ -1,6 +1,6 @@
 # Trendyol HTTP Request Analysis
 
-[Turkce](turkce/README.md)
+[Türkçe](turkce/README.md)
 
 This project documents a practical HTTP request analysis workflow executed with Chrome DevTools on Trendyol.
 Requests and responses were examined to understand client-server communication, status codes, headers, CORS behavior, and network timing.
