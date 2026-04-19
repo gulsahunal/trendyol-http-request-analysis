@@ -1,20 +1,31 @@
-# Trendyol HTTP Istek Analizi (Turkce Ozet)
+# Trendyol HTTP Istek Analizi Projesi (Turkce Ozet)
 
-Bu klasor, Trendyol uzerinde Chrome DevTools ile yapilan HTTP istek analizinin Turkce ozetini icerir.
+Bu klasor, ana projedeki Ingilizce dokumantasyonun Turkce ozetini icerir.
 
 ## Proje Amaci
 
-Bu calismada istemci-sunucu mimarisi baglaminda su basliklar incelenmistir:
+Chrome DevTools kullanilarak Trendyol uzerindeki HTTP istek akislari analiz edildi.
+Ayni 7 gorev, iki dilde de dogrudan dokumante edildi.
+
+Bu calismada istemci-sunucu mimarisi baglaminda su basliklar incelendi:
 
 - GET ve POST istekleri
+- PUT ve DELETE istekleri
 - Durum kodlari
 - Header bilgileri
 - CORS politikalari
 - Network trafigi
 
+## Sonuc Ozeti
+
+- 7 gorevin tamami basariyla tamamlandi.
+- Her gorevde secilen istek akislarinda beklenen HTTP durumlari gozlemlendi.
+- Istek/yanit detaylari ekran goruntuleriyle kanitlandi.
+- Bu depo, proje ciktilarinin sunumu icin yayimlanmistir.
+
 ## Gorev Sayfalari
 
-- Tum gorevleri tek sayfadan acin: [Turkce Gorev Listesi](https://gulsahunal.github.io/trendyol-http-request-analysis/evidence/tr/index.html)
+- Tum gorevlere ulasin: [Gorev Listesi](https://gulsahunal.github.io/trendyol-http-request-analysis/evidence/tr/index.html)
 
 ## Dosyalar
 
