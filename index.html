@@ -14,7 +14,6 @@
       --card: #ffffff;
       --accent: #0f52ff;
       --accent-2: #00a88f;
-      --shadow: 0 20px 50px rgba(19, 26, 42, 0.14);
     }
 
     * {
@@ -45,24 +44,12 @@
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 22px;
-      box-shadow: var(--shadow);
     }
 
     .hero {
       padding: 34px;
       position: relative;
       overflow: hidden;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -120px -120px auto;
-      width: 260px;
-      height: 260px;
-      border-radius: 999px;
-      background: linear-gradient(140deg, rgba(15, 82, 255, 0.2), rgba(0, 168, 143, 0.2));
-      filter: blur(2px);
     }
 
     .eyebrow {
@@ -104,7 +91,6 @@
       padding: 11px 16px;
       text-decoration: none;
       font-weight: 700;
-      transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
       border: 1px solid transparent;
     }
 
@@ -115,13 +101,20 @@
     .btn.primary {
       color: #fff;
       background: linear-gradient(135deg, var(--accent), #2e7dff);
-      box-shadow: 0 10px 20px rgba(15, 82, 255, 0.26);
+    }
+
+    .btn.primary:hover {
+      background: linear-gradient(135deg, #0c3dbf, #1a63e8);
     }
 
     .btn.secondary {
       color: var(--ink);
       background: #f7f9ff;
       border-color: var(--line);
+    }
+    
+    .btn.secondary:hover {
+      background: #e1e8f7;
     }
 
     .grid {
@@ -202,7 +195,7 @@
 <body>
   <main class="shell" aria-label="Site landing">
     <section class="card hero">
-      <p class="eyebrow">Project Landing</p>
+      <p class="eyebrow" lang="tr">GÜLŞAH ÜNAL</p>
       <h1>Trendyol HTTP Request Analysis</h1>
       <p class="lead">
         This is the dedicated homepage for the project website. Use the quick links below to open
@@ -229,8 +222,6 @@
       <article class="card block">
         <h2>Quick Navigation</h2>
         <ul class="jump-links">
-          <li><a href="evidence/en/index.html">English task index</a></li>
-          <li><a href="evidence/tr/index.html">Turkish task index</a></li>
           <li><a href="README.md">Repository README</a></li>
         </ul>
       </article>
