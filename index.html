@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trendyol HTTP Request Analysis</title>
+  <meta name="description" content="Landing page for Trendyol HTTP Request Analysis evidence and task walkthroughs.">
+  <style>
+    :root {
+      --bg: #f4f6ff;
+      --ink: #131a2a;
+      --muted: #4f5b78;
+      --line: #d5ddf4;
+      --card: #ffffff;
+      --accent: #0f52ff;
+      --accent-2: #00a88f;
+      --shadow: 0 20px 50px rgba(19, 26, 42, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Poppins", "Segoe UI", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 500px at -10% -10%, #d8e4ff 0%, transparent 60%),
+        radial-gradient(900px 500px at 120% 120%, #c3fff2 0%, transparent 55%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .shell {
+      width: min(1020px, 100%);
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -120px -120px auto;
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      background: linear-gradient(140deg, rgba(15, 82, 255, 0.2), rgba(0, 168, 143, 0.2));
+      filter: blur(2px);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.2vw, 2.65rem);
+      line-height: 1.15;
+      max-width: 19ch;
+    }
+
+    .lead {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 58ch;
+      line-height: 1.55;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 11px 16px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn.primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), #2e7dff);
+      box-shadow: 0 10px 20px rgba(15, 82, 255, 0.26);
+    }
+
+    .btn.secondary {
+      color: var(--ink);
+      background: #f7f9ff;
+      border-color: var(--line);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .block {
+      padding: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .meta strong {
+      color: var(--ink);
+    }
+
+    .jump-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .jump-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .jump-links a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      margin: 0;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #eff9f7;
+      border: 1px solid #cdece6;
+      color: #194c44;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 780px) {
+      body {
+        padding: 14px;
+      }
+
+      .hero,
+      .block {
+        padding: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell" aria-label="Site landing">
+    <section class="card hero">
+      <p class="eyebrow">Project Landing</p>
+      <h1>Trendyol HTTP Request Analysis</h1>
+      <p class="lead">
+        This is the dedicated homepage for the project website. Use the quick links below to open
+        the task evidence pages directly in your preferred language.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="evidence/en/index.html">Open English Evidence</a>
+        <a class="btn secondary" href="evidence/tr/index.html">Turkce Gorev Sayfalari</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card block">
+        <h2>At a Glance</h2>
+        <ul class="meta">
+          <li><strong>Tasks:</strong> 7 end-to-end request investigations</li>
+          <li><strong>Methods:</strong> GET, POST, PUT, DELETE</li>
+          <li><strong>Sources:</strong> Chrome DevTools network captures</li>
+          <li><strong>Evidence:</strong> Turkish and English page sets</li>
+        </ul>
+      </article>
+
+      <article class="card block">
+        <h2>Quick Navigation</h2>
+        <ul class="jump-links">
+          <li><a href="evidence/index.html">Language selector page</a></li>
+          <li><a href="evidence/en/index.html">English task index</a></li>
+          <li><a href="evidence/tr/index.html">Turkish task index</a></li>
+          <li><a href="README.md">Repository README</a></li>
+        </ul>
+        <p class="notice">
+          If you still see the old README-style homepage after deploy, hard refresh once
+          to clear browser cache.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
